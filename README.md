@@ -199,5 +199,11 @@ feature/project requirements in pieces.
 > ---
 
 #### Use Case Diagram
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/6a3f09df-e6ad-44af-93aa-75ab8365a0c7)
+
 #### Domain Model 
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/5a3028c2-f7c4-48c2-af9b-f6e3b0e3df16)
+
 #### UI Design
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/2ada79c7-053b-485e-836d-8855e533f9c3)
+
