@@ -1,0 +1,48 @@
+.wr-outer {
+    position: absolute;
+    bottom: 100px;
+    left: 0px; 
+    right: 0px;
+    display: flex; 
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: auto; 
+    
+    height: auto;
+    width: min(35vw, 500px);
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 1px lightgray;
+    background-color: #F4545A;
+    color: white;
+    user-select: none;
+}
+
+.wr-outer-anim {
+    animation: fadeout 1s linear 1 forwards;
+}
+
+.wr-dismiss {
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    border-radius: 0px 0px 5px 5px;
+    color: #F4545A;
+}
+
+.wr-row {
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
