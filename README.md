@@ -225,11 +225,11 @@ Client-server pattern and a Publish-Subscribe pattern for the architecture patte
 [Please click here to acesses the sequence diagrams](https://docs.google.com/presentation/d/1hY4zLhxHmRRi64LtyZWEOX7akjLgS-12ZtAM07qxdOg/edit#slide=id.g1848e80f8da_0_7)
 
 ### Design Class Model
-![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/89958a06-688e-4810-a41d-5d2fa5b9c216)
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/89958a06-688e-4810-a41d-5d2fa5b9c216) <br>
 [design class model](https://lucid.app/lucidchart/45792231-5b74-4f87-b793-41a401ca28d3/edit?invitationId=inv_d4b25b05-0a39-4d6f-a6a4-e6784ed44a06&page=0_0#)
 
 ### State Machine Model
-![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/bf64ac52-4523-46ba-bc06-2c258cec356d)
+ ![UML State Machine](https://github.com/allgeo/GroceryPickUp/assets/62227321/a7035196-7647-46cc-80d5-f7bdc9ad11d3)  <br>
 [state machine model](https://docs.google.com/drawings/d/1p-RIM380WgIDC06wsngWUYzTn4xzDOgXA70lsCPIV7s/edit)
 
 ## Design Models
