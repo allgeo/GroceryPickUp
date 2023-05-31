@@ -199,11 +199,68 @@ feature/project requirements in pieces.
 > ---
 
 #### Use Case Diagram
-![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/6a3f09df-e6ad-44af-93aa-75ab8365a0c7)
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/6a3f09df-e6ad-44af-93aa-75ab8365a0c7) <br>
+[use case diagram](https://lucid.app/lucidchart/5f7a4ed5-0f76-4f57-8094-cc297dc7a6a3/edit?invitationId=inv_bf963a8c-13e8-45a9-84ae-e1b5720ea279&page=0_0#)
 
 #### Domain Model 
-![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/5a3028c2-f7c4-48c2-af9b-f6e3b0e3df16)
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/5a3028c2-f7c4-48c2-af9b-f6e3b0e3df16) <br>
+[domain model](https://lucid.app/lucidchart/10927d30-7ebc-42db-bd51-e57a86efc83e/edit?invitationId=inv_e92ec424-1c53-4092-8cb2-0c62e43b51c8&page=HWEp-vi-RSFO#)
 
 #### UI Design
-![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/2ada79c7-053b-485e-836d-8855e533f9c3)
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/2ada79c7-053b-485e-836d-8855e533f9c3) <br>
+[design](https://www.figma.com/file/i8zLi55qXKz89WU0h5r2V2/CPS-731---UI-Design%2FPrototype?type=design&node-id=0-1)
+
+## Design Models
+
+### Architecture Design
+Client-server pattern and a Publish-Subscribe pattern for the architecture pattern.
+
+- Client-Server Pattern: we use the Client-Server pattern for store owners so that they can manually update the stock by themselves. There are some functions, such as creating 10 new products and increasing or decreasing product numbers. In this case, the store owners can access the server to call these functions.
+- Publish-Subscribe Pattern: we use Publish-Subscribe Pattern because this pattern is suitable to our system from ordering to picking up. When a component announces publishing an event successfully, the subscribing component is notified.
+
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/1f4dbdc8-1df3-4b2f-8f51-fadd69cdf818)
+[architecture design](https://lucid.app/lucidchart/f60022e2-2cf7-4283-a9a5-1b9640cb7852/edit?invitationId=inv_af44fc95-6686-4500-9622-9948116cc31a&page=0_0#)
+
+### Sequence Diagrams
+[Please click here to acesses the sequence diagrams](https://docs.google.com/presentation/d/1hY4zLhxHmRRi64LtyZWEOX7akjLgS-12ZtAM07qxdOg/edit#slide=id.g1848e80f8da_0_7)
+
+### Design Class Model
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/89958a06-688e-4810-a41d-5d2fa5b9c216)
+[design class model](https://lucid.app/lucidchart/45792231-5b74-4f87-b793-41a401ca28d3/edit?invitationId=inv_d4b25b05-0a39-4d6f-a6a4-e6784ed44a06&page=0_0#)
+
+### State Machine Model
+![image](https://github.com/allgeo/GroceryPickUp/assets/62227321/bf64ac52-4523-46ba-bc06-2c258cec356d)
+[state machine model](https://docs.google.com/drawings/d/1p-RIM380WgIDC06wsngWUYzTn4xzDOgXA70lsCPIV7s/edit)
+
+## Design Models
+Units tests are done through postman to test the api end points.
+
+## Design Patterns
+One of the design patterns we used in our project was the observer pattern on our checkout
+process. When an order is placed, the store owners are updated based on the new order. The
+dependents (store owners) in this case are notified via WebSockets when the new order comes
+in and updates automatically their orders page, displaying the new order. This allows the store
+owners to receive updates when a new order is placed and additionally update users for when
+an order is ready for pick up/an order can’t be completed.
+
+## Discussions on Design & implementation Decisions Made
+The architectural design choice made during the project was to use a client-server architecture
+and a publish-subscribe architecture. The use of the client-server architecture allows users to
+communicate with the servers and get the most update to date availability information on
+products and stores located near them. Additionally, allows the users to place orders for
+products, and updates the new availability information for the product at that store. Built on top
+of the client-server architecture is the use of a publish-subscribe architecture which is used to
+update store owners of new potential orders. When a new order is created an event is published
+and the subscribed store owner would receive this new event/order and can handle it
+accordingly. <br>
+The architectural designs were implemented through the use of a MERN (MongoDB, Express,
+React, and Node.js) stack which helps to achieve our client-server design. The user would
+22
+interact with the server to pull store information, product availability, and other functionalities and
+the client-side react code would update the information accordingly. To achieve the
+publish-subscribe architecture, we used WebSockets built upon pusher.js to build out our
+checkout functionality and update the dependent users (store owners).
+
+
+
 
